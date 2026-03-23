@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#B6D0E2">
+    <meta property="og:title" content="Ariana & Michael">
+<meta property="og:description" content="¡Nos casamos! 30 de Mayo 2026">
+<meta property="og:image" content="img/preview.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="invitacionMain.css">
+    <script type="text/javascript" src="invitacionMain.js" defer></script>
+    <title>Ariana y Michael</title>
+</head>
+<body>
+    <div id="intro">
+  <h1>Ariana & Michael</h1>
+  <p>30 de Mayo 2026</p>
+  <button onclick="entrar()">Abrir invitación</button>
+</div>
+   <section class="main seccion">
+    <button id="musicBtn">♪</button>
+
+    <audio id="bgMusic" autoplay muted loop playsinline>
+      <source src="music/Kenny Rogers - You Decorated My Life.mp3">
+    </audio>
+
+    <h1>Ariana & Michael</h1>
+</section>
+
+    <section class="date seccion">
+        <div class="fecha">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, vel.</p>
+        </div>
+
+        <div class="contenedor"> 
+            <p>
+                ¡ Nos casamos !
+            </p>
+            <p>
+                Sabado 30 de Mayo de 2026
+            </p>
+            <div class="contenido">
+                <div class="contador">
+                    <div class="responsivo1">
+                        <div class="cartel">
+                            <div id="dias"></div>
+                            <div class="h3"><h3>Días</h3></div>
+                        </div>
+                        <div class="cartel">
+                            <div id="horas"></div>
+                            <div class="h3"><h3>Horas</h3></div>
+                        </div>
+                    </div>
+                    <div class="responsivo2">
+                        <div class="cartel">
+                            <div id="minutos"></div>
+                            <div class="h3"><h3>Minutos</h3></div>
+                        </div>
+                        <div class="cartel">
+                            <div id="segundos"></div>
+                            <div class="h3"><h3>Segundos</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+    </section>
+
+    <section class="invitacion seccion">
+        <div class="texto">
+        <h2>Te invitamos cordialmente para celebrar nuestra unión en este día tan especial.</h2>
+
+        <i>30 de Mayo de 2026</i>
+
+        <h2>Por favor unete a nosotros en esta feliz ocasión para presenciar el comienzo de nuestro viaje juntos.</h2>
+        </div>
+    </section>
+
+    <section class="celebracion seccion">
+
+  <div class="evento-card">
+    <h2>Iglesia</h2>
+    <p class="hora">5:00 P.M.</p>
+
+    <img src="img/SJ.webp" alt="Iglesia">
+
+    <p>Casa Sacerdotal San Juan XXVIII</p>
+
+    <a href="https://maps.app.goo.gl/S2zD73qQ2wTZKS4L6" target="_blank">
+      Ver ubicación
+    </a>
+  </div>
+
+  <div class="evento-card">
+    <h2>Salón</h2>
+    <p class="hora">9:00 P.M.</p>
+
+    <img src="img/cibeles.webp" alt="Salon">
+
+    <p>Convention Center CIBELES</p>
+
+    <a href="https://maps.app.goo.gl/vJdnYsQdBxV1K87n8" target="_blank">
+      Ver ubicación
+    </a>
+  </div>
+
+</section>
+
+    <section class="dresscode seccion">
+  <h1>Código de Vestimenta</h1>
+
+  <div class="dress-container">
+    <div class="dress-item">
+      <img src="img/hombres.png" alt="Vestimenta Hombre">
+      <p>Formal - Caballero</p>
+    </div>
+
+    <div class="dress-item">
+      <img src="img/mujeres.png" alt="Vestimenta Mujer">
+      <p>Formal - Dama</p>
+    </div>
+  </div>
+</section>
+
+    <section class="fotos seccion">
+  <h1>Nuestros Momentos</h1>
+
+  <div class="carousel">
+    <div class="carousel-track">
+      <img src="img/CP-26.webp">
+      <img src="img/CP-28.webp">
+      <img src="img/CP-29.webp">
+      <img src="img/CP-39.webp">
+      <img src="img/CP-41.webp">
+      <img src="img/CP-52.webp">
+      <img src="img/CP-57.webp">
+    </div>
+
+     <div class="carousel-dots"></div>
+  </div>
+</section>
+
+    <section class="regalos seccion">
+
+  <div class="regalo-card">
+    <i class="fa-solid fa-building-columns icon"></i>
+    <h2>Transferencia Bancaria</h2>
+
+    <p><strong>Titular:</strong> Ariana Sanchez</p>
+    <p><strong>CLABE:</strong> 123456789101112</p>
+    <p><strong>Tarjeta:</strong> 1111 2222 3333 4444</p>
+  </div>
+
+  <div class="regalo-card">
+    <i class="fa-solid fa-gift icon"></i>
+    <h2>Mesa de Regalos</h2>
+    <p>Liverpool Evento 12763542</p>
+    <a href="#">Ver regalos</a>
+  </div>
+
+</section>
+
+<section class="pases seccion">
+
+<h1>Tus Pases</h1>
+
+<button class="ver-pase-btn" onclick="mostrarPase()">
+Ver mis pases
+</button>
+
+<div id="paseModal" class="pase-modal">
+
+<div class="pase-card">
+
+<h2>✨ Bienvenido a la boda de</h2>
+<h1>Ariana & Michael</h1>
+
+<p><strong>Invitado:</strong> <span id="nombreInvitado"></span></p>
+<p><strong>Mesa:</strong> <span id="mesaInvitado"></span></p>
+<p><strong>Pases:</strong> <span id="pasesInvitado"></span></p>
+
+<div class="qr-container">
+  <img id="qrInvitado" />
+</div>
+
+<button onclick="cerrarPase()">Cerrar</button>
+
+</div>
+</div>
+</section>
+
+
+</body>
+</html>
